@@ -641,6 +641,82 @@ li {
         left: 5px;
         transition: 0.5s; 
     }
+    .slider__image{
+        align-items: center;
+        /* display: flex; */
+        margin: -12px 0px 0px 0px;
+    }
+    /* .slider__image:nth-child(1n){
+        /* display: block; */
+    /* }
+    .slider__image:nth-child(2n){
+        /* display: none; */
+    /* } */
+    .slider__pagination{
+        margin: 4px 0px 0px 0px;
+    }
+    .swipe__left{
+        position: relative;
+        background-color: transparent;
+        border: 0px;
+    }
+    .swipe__right{
+        position: relative;
+        background-color: transparent;
+        border: 0px;
+    }
+    .slider__wrapper{
+        position: relative;
+        width: 500px;
+        height: 562px;
+        overflow: hidden;
+    }
+    .slider__images{
+        position: absolute;
+        display: flex;
+        gap: 51px;
+        transform: translate(25px, 13px);
+    }
+    [data-active-slide-number="1"] .slider__images {
+        transform: translate(25px, 13px);
+        transition: 0.5s;
+    }
+    [data-active-slide-number="2"] .slider__images {
+        transform: translate(-475px, 13px);
+        transition: 0.5s;
+    }
+    [data-active-slide-number="3"] .slider__images {
+        transform: translate(-975px, 13px);
+        transition: 0.5s;
+    }
+    [data-active-slide-number="4"] .slider__images {
+        transform: translate(-1475px, 13px);
+        transition: 0.5s;           
+    }
+    [data-active-slide-number="5"] .slider__images {
+        transform: translate(-1980px, 13px);
+        transition: 0.5s;
+    }
+    [data-active-slide-number="1"] .slider__button:nth-child(1) {
+        background-color: #BB945F;
+    }
+    [data-active-slide-number="2"] .slider__button:nth-child(2) {
+        background-color: #BB945F;
+    }
+    [data-active-slide-number="3"] .slider__button:nth-child(3) {
+        background-color: #BB945F;
+    }
+    [data-active-slide-number="4"] .slider__button:nth-child(4) {
+        background-color: #BB945F;
+    }
+    [data-active-slide-number="5"] .slider__button:nth-child(5) {
+        background-color: #BB945F;
+    }
+
+}
+.drop-menu{
+    height: 40px;
+    cursor: pointer;
 }
 @media (max-width: 1050px) { 
     .nav__list{

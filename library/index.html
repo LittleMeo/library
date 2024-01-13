@@ -12,7 +12,7 @@
 <body>
   <main class="main">
     <header class="header">
-      <h1 class="header__title title">Brooklyn Public Library</h1>
+      <h1 class="header__title title">Blooklyn Public Library</h1>
       <nav class="nav" data-nav>
         <ul class="nav__list">
           <li class="nav__item">
@@ -31,6 +31,21 @@
             <a href="#library__card" class="nav__link">Library Card</a>
           </li>
         </ul>
+        <div id="drop-menu">
+        <div class="drop-menu">
+          <div class="profile">
+            Profile
+            <div class="log-in">
+              Log in
+              <div class="sub-menu">Подменю 1 
+              </div></div>
+              <div class="register">
+                Register
+                <div class="sub-menu">Подменю 2 
+                </div></div>
+          </div>
+        <!-- </div> -->
+        </div>
       </nav>
       <div class="profile">
         <button class="button button_icon"><img src="img/icon_profile.png" alt="icon_profile"></button>
@@ -40,22 +55,34 @@
       </button>
     </header>
     <section class="welcome">
-      <div class="welcome__title title">Welcome <br> to the Brooklyn <br> Library</div>
+      <div class="welcome__title title">Welcome <br> to the Blooklyn <br> Library</div>
     </section>
     <section id="about" class="about">
       <h2 class="title about__title">About</h2>
       </h2>
       <div class="section-text about__section-text">The Brooklyn Library is a free workspace, a large number of books
         and a cozy coffee shop inside</div>
-      <div class="slider__item">
-        <div class="slider__image"><img src="img/image1.png" alt="pretty girl"></div>
-        <div class="slider__image"><img src="img/image2.png" alt="pretty statue"></div>
-        <div class="slider__image"><img src="img/image3.png" alt="a lot of books"></div>
-      </div>
-      <div class="slider__pagination">
-        <button class="slider__button"></button>
-        <button class="slider__button"></button>
-        <button class="slider__button"></button>
+      <div class="slider">
+        <div class="slider__item">
+          <button class="swipe__left"><img src="img/carretleft.svg"></img></button>
+          <div class="slider__wrapper">
+            <div class="slider__images">
+              <div class="slider__image"><img src="img/image1.png" alt="pretty girl"></div>
+              <div class="slider__image"><img src="img/image2.png" alt="pretty statue"></div>
+              <div class="slider__image"><img src="img/image3.png" alt="a lot of books"></div>
+              <div class="slider__image"><img src="img/image4.png" alt="a lot of books"></div>
+              <div class="slider__image"><img src="img/image5.png" alt="a lot of books"></div>
+            </div>
+          </div>
+          <button class="swipe__right"><img src="img/carretright.svg"></img></button>
+        </div>
+        <div class="slider__pagination">
+          <button class="slider__button" data-number="1"></button>
+          <button class="slider__button" data-number="2"></button>
+          <button class="slider__button" data-number="3"></button>
+          <button class="slider__button" data-number="4"></button>
+          <button class="slider__button" data-number="5"></button>
+        </div>
       </div>
     </section>
     <section id="favorites" class="favorites">
@@ -124,7 +151,7 @@
         desserts <br> from bakery.</div>
       <div class="coffe__and__tea menu">
         <ul class="coffe__description">Coffee & Tea
-          <li class="coffe__elements">Cold Brew Coffee<div class="price">$3</div>
+          <li class="coffe__elements">Cold Brew Coffe<div class="price">$3</div>
           </li>
           <li class="coffe__elements">French Press Pot<div class="price">$5</div>
           </li>
