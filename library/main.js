@@ -54,7 +54,7 @@ window.onload = function() { // можно также использовать w
     }
     function closeMenu() {
         let menu = document.getElementById('drop-menu');
-        let subm=document.getElementsByClassName('sub-menu');
+        let subm = document.getElementsByClassName('sub-menu');
         for (let i=0; i <subm.length; i++) {
             subm[i].style.display= "none";
         }   

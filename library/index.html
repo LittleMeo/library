@@ -12,7 +12,7 @@
 <body>
   <main class="main">
     <header class="header">
-      <h1 class="header__title title">Blooklyn Public Library</h1>
+      <h1 class="header__title title">Brooklyn Public Library</h1>
       <nav class="nav" data-nav>
         <ul class="nav__list">
           <li class="nav__item">
@@ -32,20 +32,22 @@
           </li>
         </ul>
         <div id="drop-menu">
-        <div class="drop-menu">
-          <div class="profile">
-            Profile
-            <div class="log-in">
-              Log in
-              <div class="sub-menu">Подменю 1 
-              </div></div>
+          <div class="drop-menu">
+            <div class="profile">
+              Profile
+              <div class="log-in">
+                Log in
+                <div class="sub-menu">Подменю 1
+                </div>
+              </div>
               <div class="register">
                 Register
-                <div class="sub-menu">Подменю 2 
-                </div></div>
+                <div class="sub-menu">Подменю 2
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
           </div>
-        <!-- </div> -->
-        </div>
       </nav>
       <div class="profile">
         <button class="button button_icon"><img src="img/icon_profile.png" alt="icon_profile"></button>
@@ -55,11 +57,10 @@
       </button>
     </header>
     <section class="welcome">
-      <div class="welcome__title title">Welcome <br> to the Blooklyn <br> Library</div>
+      <div class="welcome__title title">Welcome <br> to the Brooklyn <br> Library</div>
     </section>
     <section id="about" class="about">
       <h2 class="title about__title">About</h2>
-      </h2>
       <div class="section-text about__section-text">The Brooklyn Library is a free workspace, a large number of books
         and a cozy coffee shop inside</div>
       <div class="slider">
@@ -77,16 +78,26 @@
           <button class="swipe__right"><img src="img/carretright.svg"></img></button>
         </div>
         <div class="slider__pagination">
-          <button class="slider__button" data-number="1"></button>
-          <button class="slider__button" data-number="2"></button>
-          <button class="slider__button" data-number="3"></button>
-          <button class="slider__button" data-number="4"></button>
-          <button class="slider__button" data-number="5"></button>
+          <div class="slider__button-area">
+            <button class="slider__button" data-number="1"></button>
+          </div>
+          <div class="slider__button-area">
+            <button class="slider__button" data-number="2"></button>
+          </div>
+          <div class="slider__button-area">
+            <button class="slider__button" data-number="3"></button>
+          </div>
+          <div class="slider__button-area">
+            <button class="slider__button" data-number="4"></button>
+          </div>
+          <div class="slider__button-area">
+            <button class="slider__button" data-number="5"></button>
+          </div>
         </div>
       </div>
     </section>
     <section id="favorites" class="favorites">
-      <h3 class="title favorites__title">Favorites</h3>
+      <h2 class="title favorites__title">Favorites</h2>
       <div class="section-text favorites__section-text">Pick favorites of season</div>
       <div class="radio-text">
         <div class="winter"><input type="radio" id='contactChoice1' name="season" value="Winter">
@@ -139,12 +150,84 @@
           <div class="book__author">By Clive Irving</div>
           <div class="book__text">A Timely And Revelatory New Biography Of Queen Elizabeth (And Her Family) Exploring
             How The Windsors Have Evolved And Thrived As The Modern World Has Changed Around Them.</div>
-          <button class="book__button button">Own</button>
+          <button class="book__button button disabled">Own</button>
           <div class="book__img"><img src="img/book3.png"></div>
+        </div>
+        <div class="book">
+          <div class="book__tag">Staff Picks</div>
+          <div class="book__title">The Last Queen</div>
+          <div class="book__author">By Clive Irving</div>
+          <div class="book__text">A Timely And Revelatory New Biography Of Queen Elizabeth (And Her Family) Exploring
+            How The Windsors Have Evolved And Thrived As The Modern World Has Changed Around Them.</div>
+          <button class="book__button button">Own</button>
+          <div class="book__img"><img src="img/book4.png"></div>
+        </div>
+        <div class="book">
+          <div class="book__tag">Staff Picks</div>
+          <div class="book__title">The Last Queen</div>
+          <div class="book__author">By Clive Irving</div>
+          <div class="book__text">A Timely And Revelatory New Biography Of Queen Elizabeth (And Her Family) Exploring
+            How The Windsors Have Evolved And Thrived As The Modern World Has Changed Around Them.</div>
+          <button class="book__button button">Own</button>
+          <div class="book__img"><img src="img/book5.png"></div>
+        </div>
+        <div class="book">
+          <div class="book__tag">Staff Picks</div>
+          <div class="book__title">The Last Queen</div>
+          <div class="book__author">By Clive Irving</div>
+          <div class="book__text">A Timely And Revelatory New Biography Of Queen Elizabeth (And Her Family) Exploring
+            How The Windsors Have Evolved And Thrived As The Modern World Has Changed Around Them.</div>
+          <button class="book__button button">Own</button>
+          <div class="book__img"><img src="img/book6.png"></div>
+        </div>
+        <div class="book">
+          <div class="book__tag">Staff Picks</div>
+          <div class="book__title">The Last Queen</div>
+          <div class="book__author">By Clive Irving</div>
+          <div class="book__text">A Timely And Revelatory New Biography Of Queen Elizabeth (And Her Family) Exploring
+            How The Windsors Have Evolved And Thrived As The Modern World Has Changed Around Them.</div>
+          <button class="book__button button">Own</button>
+          <div class="book__img"><img src="img/book7.png"></div>
+        </div>
+        <div class="book">
+          <div class="book__tag">Staff Picks</div>
+          <div class="book__title">The Last Queen</div>
+          <div class="book__author">By Clive Irving</div>
+          <div class="book__text">A Timely And Revelatory New Biography Of Queen Elizabeth (And Her Family) Exploring
+            How The Windsors Have Evolved And Thrived As The Modern World Has Changed Around Them.</div>
+          <button class="book__button button">Own</button>
+          <div class="book__img"><img src="img/book8.png"></div>
+        </div>
+        <div class="book">
+          <div class="book__tag">Staff Picks</div>
+          <div class="book__title">The Last Queen</div>
+          <div class="book__author">By Clive Irving</div>
+          <div class="book__text">A Timely And Revelatory New Biography Of Queen Elizabeth (And Her Family) Exploring
+            How The Windsors Have Evolved And Thrived As The Modern World Has Changed Around Them.</div>
+          <button class="book__button button">Own</button>
+          <div class="book__img"><img src="img/book9.png"></div>
+        </div>
+        <div class="book">
+          <div class="book__tag">Staff Picks</div>
+          <div class="book__title">The Last Queen</div>
+          <div class="book__author">By Clive Irving</div>
+          <div class="book__text">A Timely And Revelatory New Biography Of Queen Elizabeth (And Her Family) Exploring
+            How The Windsors Have Evolved And Thrived As The Modern World Has Changed Around Them.</div>
+          <button class="book__button button">Own</button>
+          <div class="book__img"><img src="img/book10.png"></div>
+        </div>
+        <div class="book">
+          <div class="book__tag">Staff Picks</div>
+          <div class="book__title">The Last Queen</div>
+          <div class="book__author">By Clive Irving</div>
+          <div class="book__text">A Timely And Revelatory New Biography Of Queen Elizabeth (And Her Family) Exploring
+            How The Windsors Have Evolved And Thrived As The Modern World Has Changed Around Them.</div>
+          <button class="book__button button">Own</button>
+          <div class="book__img"><img src="img/book11.png"></div>
         </div>
     </section>
     <section id="coffe__shop" class="coffe__shop">
-      <div class="coffee__shop__title title">Coffee Shop</div>
+      <h2 class="coffee__shop__title title">Coffee Shop</h2>
       <div class="coffee__text">In our library, we have of cozy coffee shop, welcoming in customers with frothy
         cappuccinos and friendly conversation.<br>
         you can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and also you can try
@@ -183,13 +266,13 @@
       </div>
     </section>
     <section id="ourContacts" class="ourContacts">
-      <div class="ourContacts__title title">Our Contacts</div>
+      <h2 class="ourContacts__title title">Our Contacts</h2>
       <div class="contacts__content">
         <div class="contacts__info">
           <div class="text__info">For All Library Inquiries: </div>
-          <div class="please__call">Please Call (617) 730-2370</div>
-          <div class="for__ttv">For TTY Service, Please Call (617) 730-2370</div>
-          <div class="phone__info">Putterham Library: (617) 730-2385</div>
+          <div class="please__call">Please Call <a href="tel:(617) 730-2370">(617) 730-2370</a></div>
+          <div class="for__ttv">For TTY Service, Please Call <a href="tel:(617) 730-2370" class="tel"> (617) 730-2370</a></div>
+          <div class="phone__info">Putterham Library: <a href="tel:(617) 730-2385" class="tel">(617) 730-2385</a></div>
           <div class="senior__staff">Senior Staff</div>
           <div class="libraryDirector">Library Director:
             <a href="AmandaHirst@gmail.com" class="amandaHirst">Amanda Hirst</a>
@@ -199,7 +282,7 @@
       </div>
     </section>
     <section class="librarytitle">
-      <div class="library__title title">Digital Library Cards</div>
+      <h2 class="library__title title">Digital Library Cards</h2>
     </section>
     <section id="library__card" class="library__card">
       <div class="card__bg">
@@ -243,7 +326,7 @@
       <div class="author__info">
         <div class="year">2023</div>
         <div class="rsschool">The Rolling Scopes School</div>
-        <div class="username">Cotodemon</div>
+        <div class="username">LittleMeo</div>
       </div>
     </footer>
   </main>
