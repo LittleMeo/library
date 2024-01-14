@@ -146,6 +146,13 @@ a {
     cursor: pointer;
     border: 0;
     border-radius: 50%;
+    margin: 0px 0 0 0;
+    padding: 0px 0 0 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 /* .slider__button::before {
@@ -292,21 +299,25 @@ a {
 #contactChoice1 {
     width: 17px;
     height: 17px;
+    cursor: pointer;
 }
 
 #contactChoice2 {
     width: 17px;
     height: 17px;
+    cursor: pointer;
 }
 
 #contactChoice3 {
     width: 17px;
     height: 17px;
+    cursor: pointer;
 }
 
 #contactChoice4 {
     width: 17px;
     height: 17px;
+    cursor: pointer;
 }
 
 .book__tag {
@@ -897,6 +908,29 @@ a {
         transform: translate(25px, 13px);
     }
 
+    .slider__button-area:nth-child(4) {
+        display: block;
+    }
+    .slider__button-area:nth-child(5) {
+        display: block;
+    }
+
+    .slider__button-area {
+        color: transparent;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        border: 0;
+        border-radius: 50%;
+        margin: 0px 0 0 0;
+        padding: 0px 0 0 0;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
     [data-active-slide-number="1"] .slider__images {
         transform: translate(25px, 13px);
         transition: 0.5s;
@@ -942,12 +976,7 @@ a {
         background-color: #BB945F;
     }
 
-    .slider__button-area:nth-child(4) {
-        display: block;
-    }
-    .slider__button-area:nth-child(5) {
-        display: block;
-    }
+
 
 }
 .drop-menu {
