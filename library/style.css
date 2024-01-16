@@ -124,10 +124,40 @@ a {
     justify-content: space-evenly;
 }
 
+.swipe__left {
+    display: none;
+}
+
+.slider__wrapper {
+    position: relative;
+    width: 1400px;
+    height: 562px;
+    overflow: hidden;
+}
+
+.slider__images {
+    display: flex;
+    gap: 25px;
+}
+
+.slider__image:nth-child(4) {
+    display: block;
+}
+
+.slider__image:nth-child(5) {
+    display: block;
+}
+
+.swipe__right {
+    display: none;
+}
+
+
 .slider__pagination {
     display: flex;
     justify-content: center;
     gap: 10px;
+    margin: 40px 0 0 0;
 }
 
 .slider__button {
@@ -163,6 +193,21 @@ a {
     cursor: pointer;
     position: absolute;
 } */
+
+[data-active-slide-number="1"] .slider__images {
+    transform: translate(25px, 13px);
+    transition: 0.5s;
+}
+
+[data-active-slide-number="2"] .slider__images {
+    transform: translate(-475px, 13px);
+    transition: 0.5s;
+}
+
+[data-active-slide-number="3"] .slider__images {
+    transform: translate(-975px, 13px);
+    transition: 0.5s;
+}
 
 [data-active-slide-number="1"] .slider__button:nth-child(1) {
     background-color: #BB945F;
@@ -271,7 +316,6 @@ a {
 
 .radio-text {
     font-size: 20px;
-    line-height: auto;
     display: flex;
     gap: 90px;
     margin: 33px 10px 0px 20px;
@@ -867,6 +911,12 @@ a {
         transition: 0.5s; 
     }
 
+    .slider__item {
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+
     .slider__image {
         align-items: center;
         /* display: flex; */
@@ -887,12 +937,14 @@ a {
         position: relative;
         background-color: transparent;
         border: 0px;
+        display: block;
     }
 
     .swipe__right {
         position: relative;
         background-color: transparent;
         border: 0px;
+        display: block;
     }
 
     .slider__wrapper {
@@ -908,6 +960,14 @@ a {
         gap: 51px;
         transform: translate(25px, 13px);
     }
+
+    .slider__image:nth-child(4) {
+        display: block;
+    }
+    
+    .slider__image:nth-child(5) {
+        display: block;
+    } 
 
     .slider__button-area:nth-child(4) {
         display: flex;
