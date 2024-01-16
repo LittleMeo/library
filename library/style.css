@@ -113,6 +113,7 @@ a {
     border: 0px;
     background-color: transparent;
     margin: 0px 0 0 30px;
+    border-radius: 2px;
 }
 
 .slider__image {
@@ -250,6 +251,16 @@ a {
     margin: 17px 0;
 }
 
+.about__title::before {
+    content: '';
+    height: 1px;
+    width: 50px;
+    position: absolute;
+    background-color: #0C0C0E;
+    top: 770px;
+    left: 930px;
+}
+
 .about__section-text {
     font-family: 'Forum';
     font-size: 24px;
@@ -266,6 +277,16 @@ a {
     text-align: center;
     margin: 58px -1px 0px 0px;
     letter-spacing: 2px;
+}
+
+.favorites__title::before {
+    content: '';
+    height: 1px;
+    width: 50px;
+    position: absolute;
+    background-color: #0C0C0E;
+    top: 1615px;
+    left: 925px;
 }
 
 .book {
@@ -450,6 +471,16 @@ a {
     letter-spacing: 2px;
 }
 
+.coffee__shop::before {
+    content: '';
+    height: 1px;
+    width: 50px;
+    position: absolute;
+    background-color: #0C0C0E;
+    top: 3080px;
+    left: 925px;
+}
+
 .coffee__text {
     text-align: center;
     font-size: 20px;
@@ -516,7 +547,6 @@ a {
 }
 
 .price::before {
-    justify-content: space-between;
     background-color: #BB945F;
     height: 1px;
     position: absolute;
@@ -542,6 +572,16 @@ a {
     text-align: center;
     letter-spacing: 2px;
     margin: 0;
+}
+
+.ourContacts__title::before {
+    content: '';
+    height: 1px;
+    width: 50px;
+    position: absolute;
+    background-color: #0C0C0E;
+    top: 3963px;
+    left: 925px;
 }
 
 .contacts__content {
@@ -606,8 +646,19 @@ a {
 
 .library__title {
     text-align: center;
-    margin: 50px 0px 0 0;
+    margin: 0;
     letter-spacing: 1.85px;
+    font-weight: 400;
+}
+
+.library__title::before {
+    content: '';
+    height: 1px;
+    width: 50px;
+    position: absolute;
+    background-color: #0C0C0E;
+    top: 4570px;
+    left: 925px;
 }
 
 .findCard {
@@ -620,7 +671,7 @@ a {
     padding: 0px 0 0 18px;
 }
 
-.library__button {
+.libraryButton {
     font-family: 'Inter';
     font-weight: bold;
     font-size: 20px;
@@ -710,31 +761,33 @@ a {
     padding: 18px 0px 22px 4px;
 }
 
+.get_a_card {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
 .get__a__reader__card {
     font-family: 'Forum';
     font-size: 30px;
     letter-spacing: 0.5px;
     text-align: right;
-    margin: 58px 21px 0 0px;
+    margin: 58px 0 0 0;
 }
 
 .get__text {
     font-family: 'Inter';
     font-size: 20px;
-    padding: 37px 0 0 0;
     line-height: 40px;
     letter-spacing: 0.4px;
-    text-align: center;
-    margin: 0 0 0 30px;
+    text-align: right;
 }
 
 .log__into {
-    margin: 0 18px 0 0;
     font-family: 'Inter';
     font-size: 20px;
     line-height: 40px;
     letter-spacing: 0.42px;
-    text-align: center;
 }
 
 .account {
@@ -743,11 +796,9 @@ a {
     line-height: 40px;
     letter-spacing: 0.42px;
     text-align: right;
-    margin: 0 20px 0px 0px;
 }
 
 .sign__log__button {
-    margin: 33px 20px 0px 0px;
     text-align: right;
 }
 
@@ -755,12 +806,14 @@ a {
     margin: 0px 0 0 16px;
     border: solid 1px;
     padding: 6px 20px 6px 18px;
+    font-weight: 700;
 }
 
 .sign__button {
     border: solid 1px;
     border-color: #0C0C0E;
     padding: 6px 11px 6px 16px;
+    font-weight: 700;
 }
 
 .footer {
