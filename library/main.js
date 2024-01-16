@@ -5,7 +5,7 @@ window.onload = function() { // можно также использовать w
     const slider = document.querySelector('.slider');
     const swipe__left = document.querySelector('.swipe__left')
     const swipe__right = document.querySelector('.swipe__right')
-    const slider__buttons = document.querySelectorAll('.slider__button')
+    const slider__buttons = document.querySelectorAll('.slider__button-area')
     
     
     burger?.addEventListener('click', () => {

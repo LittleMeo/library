@@ -137,6 +137,7 @@ a {
     height: 16px;
     border: none;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .slider__button-area {
@@ -909,26 +910,10 @@ a {
     }
 
     .slider__button-area:nth-child(4) {
-        display: block;
+        display: flex;
     }
     .slider__button-area:nth-child(5) {
-        display: block;
-    }
-
-    .slider__button-area {
-        color: transparent;
-        width: 26px;
-        height: 26px;
-        cursor: pointer;
-        border: 0;
-        border-radius: 50%;
-        margin: 0px 0 0 0;
-        padding: 0px 0 0 0;
         display: flex;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
     }
 
     [data-active-slide-number="1"] .slider__images {
