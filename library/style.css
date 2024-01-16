@@ -528,6 +528,8 @@ a {
     flex-direction: column;
     gap: 40px;
     padding: 20px 20px 40px 20px;
+    align-items: center;
+    width: 1440px;
 }
 
 .coffee__shop__title {
@@ -555,20 +557,12 @@ a {
 }
 
 .menu {
-    display: flex;
     width: 1440px;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-evenly;
 }
 
 .coffee__and__tea {
-    display: inline-flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .coffee__description {
@@ -581,7 +575,6 @@ a {
     padding: 0;
     width: 438px;
     font-style: normal;
-    text-transform: capitalize;
     font-weight: 400;
     display: inline-flex;
     flex-direction: column;
@@ -590,13 +583,22 @@ a {
     gap: 40px;
 }
 
-.deserts {
-    display: flex;
+.deserts__description {
+    font-family: 'Forum';
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 40px;
+    color: #BB945F;
+    margin: 0;
+    padding: 0;
+    width: 438px;
+    font-style: normal;
+    font-weight: 400;
+    display: inline-flex;
+    flex-direction: column;
     justify-content: center;
     align-items: flex-end;
     gap: 40px;
-    width: 482px;
-    flex-direction: column;
 }
 
 .coffee__elements {
