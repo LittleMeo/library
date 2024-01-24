@@ -68,14 +68,12 @@ a {
 }
 
 .nav {
-    display: flex;
-    gap: 30px;
     margin-left: auto;
 }
 
 .nav__list {
     display: flex;
-    gap: 34px;
+    gap: 30px;
     align-items: center;
 }
 
@@ -114,6 +112,7 @@ a {
     background-color: transparent;
     margin: 0px 0 0 30px;
     border-radius: 2px;
+    padding: 0 0 0 11px;
 }
 
 .slider__image {
@@ -557,75 +556,71 @@ a {
 }
 
 .menu {
-    width: 1440px;
-}
-
-.coffee__and__tea {
     display: flex;
+    width: 100%;
     justify-content: space-between;
 }
 
-.coffee__description {
-    font-family: 'Forum';
-    font-size: 40px;
-    letter-spacing: 2px;
-    line-height: 40px;
-    color: #BB945F;
-    margin: 0;
-    padding: 0;
-    width: 438px;
-    font-style: normal;
-    font-weight: 400;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-}
-
-.deserts__description {
-    font-family: 'Forum';
-    font-size: 40px;
-    letter-spacing: 2px;
-    line-height: 40px;
-    color: #BB945F;
-    margin: 0;
-    padding: 0;
-    width: 438px;
-    font-style: normal;
-    font-weight: 400;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 40px;
-}
-
-.coffee__elements {
+.menu__column {
     display: flex;
-    color: #000000;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.menu__column:nth-child(2) {
+    align-items: flex-end;
+}
+
+.menu__column-title {
+    color: #BB945F;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.menu__column-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.menu__column:nth-child(2) .menu__column-list {
+    align-items: flex-end;
+}
+
+.menu__column-row {
+    color: #000;
     font-family: Inter;
     font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
     line-height: 40px;
     letter-spacing: 2px;
-    padding: 0;
-    margin: 0;
+    text-transform: capitalize;
+    display: flex;
+    gap: 60px;
     justify-content: space-between;
 }
 
-.price::before {
-    background-color: #BB945F;
-    height: 1px;
-    position: absolute;
-    content: "";
-    width: 100px;
-    top: 15px;
-    left: -105px;
+.row__price-and-line {
+    display: flex;
+    gap: 60px;
 }
 
-.price {
+.row__line::before {
+    content: '';
+    background-color: #BB945F;
+    width: 100px;
+    height: 1px;
     position: relative;
-    left: 120px;
+    display: block;
+    top: 20px;
 }
 
 .ourContacts {
