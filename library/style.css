@@ -113,7 +113,6 @@ a {
     background-color: transparent;
     margin: 0px 0 0 30px;
     border-radius: 2px;
-    padding: 0 0 0 11px;
 }
 
 .slider {
@@ -275,7 +274,7 @@ a {
 
 .favorites__title {
     text-align: center;
-    margin: 58px -1px 0px 0px;
+    margin: 50px 0px 0px 18px;
     letter-spacing: 2px;
 }
 
@@ -287,6 +286,14 @@ a {
     background-color: #0C0C0E;
     top: 1615px;
     left: 925px;
+}
+
+.favorites__section-text {
+    font-family: Inter;
+    font-weight: 700;
+    color: #000000;
+    font-size: 20px;
+    margin: 47px 0 0 29px;
 }
 
 .book {
@@ -337,73 +344,84 @@ a {
 
 .radio-text {
     font-size: 20px;
+    font-family: Inter;
     display: flex;
-    gap: 90px;
-    margin: 33px 10px 0px 20px;
+    gap: 171px;
+    margin: 33px 0px 0px 27px;
 }
 
-.winter {
+input[type="radio"]:checked {
+    accent-color: #000000;
+}
+
+.contactChoice1-area ~ input[type="radio"]:checked {
+    font-weight: 700;
+}
+
+.contactChoice:nth-child(1) {
     display: flex;
     gap: 20px;
 }
 
-.spring {
+.contactChoice:nth-child(2) {
     display: flex;
     gap: 20px;
 }
 
-.summer {
+.contactChoice:nth-child(3) {
     display: flex;
-    gap: 20px;
+    gap: 17px;
 }
 
-.autumn {
+.contactChoice:nth-child(4) {
     display: flex;
-    gap: 20px;
+    gap: 17px;
 }
 
 #contactChoice1 {
     width: 17px;
     height: 17px;
     cursor: pointer;
+    margin: 0;
+    padding: 0;
 }
 
 .contactChoice1-area {
-    color: transparent;
     width: 26px;
     height: 26px;
     cursor: pointer;
     border: 0;
-    border-radius: 50%;
     margin: 0px 0 0 0;
     padding: 0px 0 0 0;
     display: flex;
-    align-content: center;
     justify-content: center;
     align-items: center;
+    gap: 24px;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 #contactChoice2 {
     width: 17px;
     height: 17px;
     cursor: pointer;
+    margin: 0;
+    padding: 0;
 }
 
 .contactChoice2-area {
-    color: transparent;
     width: 26px;
     height: 26px;
     cursor: pointer;
     border: 0;
-    border-radius: 50%;
     margin: 0px 0 0 0;
     padding: 0px 0 0 0;
     display: flex;
-    align-content: center;
     justify-content: center;
     align-items: center;
+    gap: 18px;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 
@@ -411,44 +429,46 @@ a {
     width: 17px;
     height: 17px;
     cursor: pointer;
+    margin: 0;
+    padding: 0;
 }
 
 .contactChoice3-area {
-    color: transparent;
     width: 26px;
     height: 26px;
     cursor: pointer;
     border: 0;
-    border-radius: 50%;
     margin: 0px 0 0 0;
     padding: 0px 0 0 0;
     display: flex;
-    align-content: center;
     justify-content: center;
     align-items: center;
+    gap: 17px;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 #contactChoice4 {
     width: 17px;
     height: 17px;
     cursor: pointer;
+    margin: 0;
+    padding: 0;
 }
 
 .contactChoice4-area {
-    color: transparent;
     width: 26px;
     height: 26px;
     cursor: pointer;
     border: 0;
-    border-radius: 50%;
     margin: 0px 0 0 0;
     padding: 0px 0 0 0;
     display: flex;
-    align-content: center;
     justify-content: center;
     align-items: center;
+    gap: 20px;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .book__tag {
@@ -460,11 +480,11 @@ a {
 
 .favorites__items {
     position: relative;
-    grid-template-columns: repeat(2, 550px);
+    grid-template-columns: repeat(2, 540px);
     display: grid;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 41px 62px 0 20px;
+    padding: 37px 62px 0 28px;
     gap: 40px 0px;
 }
 
@@ -507,8 +527,8 @@ a {
     font-weight: bold;
     text-align: center;
     margin: auto auto 0 0px;
-    align-items: self-end;
     align-self: auto;
+    font-size: 10px;
 }
 
 .disabled {
