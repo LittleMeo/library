@@ -547,7 +547,7 @@ input[type="radio"]:checked {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding: 20px 16px 40px 20px;
+    padding: 20px 16px 36px 20px;
     align-items: center;
 }
 
@@ -641,10 +641,10 @@ input[type="radio"]:checked {
 }
 
 .ourContacts {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    padding: 20px 20px 40px 20px;
-    gap: 40px;
+    padding: 20px 20px 52px 20px;
+    gap: 54px;
 }
 
 .ourContacts__title {
@@ -659,14 +659,13 @@ input[type="radio"]:checked {
     width: 50px;
     position: absolute;
     background-color: #0C0C0E;
-    top: 3963px;
-    left: 925px;
+    top: 3888px;
+    left: 927px;
 }
 
 .contacts__content {
     display: flex;
     justify-content: space-between;
-    gap: 201px;
 }
 
 .contacts__info {
@@ -756,10 +755,6 @@ input[type="radio"]:checked {
     font-size: 20px;
     line-height: auto;
     letter-spacing: 1px;
-}
-
-.contacts__img {
-    margin: 56px 20px 0 0px;
 }
 
 .for__tty {
