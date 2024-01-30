@@ -735,8 +735,8 @@ input[type="radio"]:checked {
     width: 50px;
     position: absolute;
     background-color: #0C0C0E;
-    top: 4570px;
-    left: 925px;
+    top: 4462px;
+    left: 928px;
 }
 
 .findCard {
@@ -791,20 +791,20 @@ input[type="radio"]:checked {
     display: flex;
     width: 520px;
     height: 66px;
-    border-radius: 9px;
-    margin: 23px 0px 0px 15px;
+    border-radius: 10px;
+    margin: 19px 0px 0px 15px;
     font-family: 'Forum';
     font-size: 30px;
     letter-spacing: 0.7px;
     box-sizing: border-box;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 19px;
 }
 
 #email {
     width: 520px;
     height: 66px;
     border-radius: 10px;
-    margin: 26px 0px 0px 17px;
+    margin: 25px 0px 0px 15px;
     padding: 0 0 0 19px;
     font-family: 'Forum';
     font-size: 30px;
@@ -815,7 +815,8 @@ input[type="radio"]:checked {
 
 .card__title {
     font-size: 30px;
-    margin: 0px 0px 0 11px;
+    margin: 0px 0px 0 15px;
+    letter-spacing: 0.65px;
 }
 
 .libraryButton {
@@ -832,13 +833,14 @@ input[type="radio"]:checked {
 
 .library__form {
     background-color: #BB945F;
-    padding: 18px 0px 22px 4px;
+    padding: 20px 0px 23px 4px;
 }
 
-.get_a_card {
+.get__a__card {
     display: flex;
     flex-direction: column;
     gap: 35px;
+    padding: 0 20px 0 0;
 }
 
 .get__a__reader__card {
@@ -846,7 +848,7 @@ input[type="radio"]:checked {
     font-size: 30px;
     letter-spacing: 0.5px;
     text-align: right;
-    margin: 58px 0 0 0;
+    margin: 56px 0 0 0;
 }
 
 .get__text {
@@ -877,17 +879,24 @@ input[type="radio"]:checked {
 }
 
 .log__button {
-    margin: 0px 0 0 16px;
+    margin: 0px 0 0 17px;
     border: solid 1px;
-    padding: 6px 20px 6px 18px;
+    padding: 6px 19px 9px 18px;
     font-weight: 700;
+    font-family: Inter;
+    font-size: 10px;
+    letter-spacing: 1px;
 }
 
 .sign__button {
     border: solid 1px;
     border-color: #0C0C0E;
-    padding: 6px 11px 6px 16px;
+    padding: 7px 15px 9px 12px;
     font-weight: 700;
+    margin: 0;
+    font-family: Inter;
+    font-size: 10px;
+    letter-spacing: 1px;
 }
 
 .footer {
