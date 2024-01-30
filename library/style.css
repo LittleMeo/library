@@ -247,7 +247,6 @@ a {
     font-weight: 400;
     line-height: 40px;
     letter-spacing: 2px;
-    text-transform: capitalize;
 }
 
 .about__title::before {
@@ -514,7 +513,6 @@ input[type="radio"]:checked {
     line-height: 40px;
     grid-template-columns: 357px 200px;
     padding: 20px 0px 15px 0px;
-    text-transform: capitalize;
 }
 
 .book__button {
@@ -1006,7 +1004,7 @@ input[type="radio"]:checked {
 }
 
 .burger::before {
-    top: 0;
+    top: -2px;
 }
 
 .burger::after {
@@ -1018,7 +1016,10 @@ input[type="radio"]:checked {
         position: sticky;
         top: -0.1px;
         z-index: 10;
-        /* gap: 34px; */
+    }
+
+    .header__title {
+        letter-spacing: 0.65px;
     }
 
     .favorites__items {
@@ -1037,6 +1038,7 @@ input[type="radio"]:checked {
 
     .burger {
         display: block;
+        margin: 0 0 0 34px;
     }
 
     .nav {
@@ -1077,7 +1079,6 @@ input[type="radio"]:checked {
 
     .profile {
         margin-left: auto;
-        display: none;
     }
 
     .nav--visible .burger__line {
