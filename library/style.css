@@ -908,8 +908,8 @@ input[type="radio"]:checked {
 .footer__address {
     line-height: 20px;
     font-size: 15px;
-    letter-spacing: 1.1px;
     color: #FFFFFF;
+    font-family: Inter;
 }
 
 .footer__img {
@@ -920,15 +920,17 @@ input[type="radio"]:checked {
 
 .mon__fri {
     text-align: right;
-    letter-spacing: 0.6px;
     color: #FFFFFF;
+    font-family: Inter;
+    font-size: 15px;
 }
 
 .sat__sun {
     text-align: right;
-    letter-spacing: 0.6px;
     color: #FFFFFF;
-    padding: 15px 3px 0 0px;
+    font-family: Inter;
+    font-size: 15px;
+    padding: 13px 1px 0 0px;
 }
 
 .line {
@@ -960,7 +962,7 @@ input[type="radio"]:checked {
 .author__info {
     display: flex;
     height: 100px;
-    margin: 32px 0 0 0;
+    margin: 31px 0 0 0;
     border-top: 1px solid #FFFFFF;
     font-size: 20px;
     font-family: 'Inter';
