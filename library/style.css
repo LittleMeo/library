@@ -41,7 +41,7 @@ a {
 }
 
 .header {
-    background-color: #0C0C0E;
+    background-color: #000000;
     color: white;
     display: flex;
     align-items: center;
@@ -1012,6 +1012,10 @@ input[type="radio"]:checked {
 }
 
 @media (max-width: 1024px) {
+    .main {
+        max-width: 1024px;
+    }
+
     .header {
         position: sticky;
         top: -0.1px;
@@ -1087,12 +1091,20 @@ input[type="radio"]:checked {
 
     .row__price {
         font-family: Forum;
-
     }
 
     .favorites__section-text {
         max-width: 675px;
         margin: 50px 0 0 20px;
+    }
+
+    .contacts__content {
+        flex-direction: column;
+        gap: 102px;
+    }
+
+    .contacts__img {
+        margin: 0 0 0 17px;
     }
 
     .radio-text {
@@ -1114,7 +1126,7 @@ input[type="radio"]:checked {
         top: 0;
         z-index: 1000;
         padding: 15px 0 103px 0;
-        background-color: #0C0C0E;
+        background-color: #000000;
         transform: translate(150%, 90px);
         transition: 0.5s;
     }
