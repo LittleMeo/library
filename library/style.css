@@ -353,7 +353,7 @@ input[type="radio"]:checked {
     accent-color: #000000;
 }
 
-.contactChoice1-area ~ input[type="radio"]:checked {
+.contactChoice1-area~input[type="radio"]:checked {
     font-weight: 700;
 }
 
@@ -1036,18 +1036,71 @@ input[type="radio"]:checked {
         gap: 0;
     }
 
+    .favorites__title {
+        margin: 50px 0 0 0;
+    }
+
     .favorites__items {
-        grid-template-columns: repeat(1, 550px);
+        grid-template-columns: repeat(1, 556px);
         justify-content: center;
+    }
+
+    .book {
+        height: 555px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 41px;
+    }
+
+    .menu__column-title {
+        margin: 0 5px 0 0;
+    }
+
+    .menu__column-list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 442px;
+    }
+
+    .menu__column:nth-child(2) .menu__column-list {
+        align-items: flex-end;
+        width: 467px;
+    }
+
+    .menu__column-row {
+        color: #000;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: 2px;
+        display: flex;
+        gap: 60px;
+        justify-content: space-between;
+    }
+
+    .row__price {
+        font-family: Forum;
+
     }
 
     .favorites__section-text {
         max-width: 675px;
-        margin: 52px auto 15px;
+        margin: 50px 0 0 20px;
     }
 
     .radio-text {
-        justify-content: center;
+        font-size: 20px;
+        font-family: Inter;
+        display: flex;
+        gap: 170px;
+        margin: 31px 0px 0px 20px;
     }
 
     .burger {
@@ -1126,7 +1179,7 @@ input[type="radio"]:checked {
     }
 
     .slider__pagination {
-        margin: 17px 0px 0px 0px; 
+        margin: 17px 0px 0px 0px;
     }
 
     .swipe__left {
