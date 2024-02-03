@@ -120,7 +120,7 @@ a {
 .main {
     max-width: 1440px;
     margin: 0px auto;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .button {
@@ -1036,8 +1036,13 @@ input[type="radio"]:checked {
         margin: 0 0 0 17px;
     }
 
+    .map__img {
+        box-sizing: content-box;
+        width: 100%;
+    }
+
     .radio-text {
-        gap: 80px;
+        gap: 11%;
         margin: 26px 0px 0px 16px;
     }
 
@@ -1147,9 +1152,6 @@ input[type="radio"]:checked {
 
     .slider__images {
         position: absolute;
-        display: flex;
-        gap: 51px;
-        transform: translate(25px, 13px);
     }
 
     .ourContacts {
@@ -1284,5 +1286,11 @@ input[type="radio"]:checked {
 @media (max-width: 1050px) {
     .nav__list {
         padding: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .radio-text {
+        gap: 5%;
     }
 }
