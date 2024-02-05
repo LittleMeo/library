@@ -17,8 +17,6 @@ li {
     list-style: none;
 }
 
-a:active,
-a:hover,
 a {
     text-decoration: none;
     color: #000000;
@@ -120,7 +118,6 @@ a {
 .main {
     max-width: 1440px;
     margin: 0px auto;
-    /* overflow: hidden; */
 }
 
 .button {
@@ -899,7 +896,7 @@ input[type="radio"]:checked {
     align-items: center;
 }
 
-.burger {
+.button-burger {
     position: relative;
     width: 45px;
     height: 20px;
@@ -921,8 +918,8 @@ input[type="radio"]:checked {
     transition: 0.5s;
 }
 
-.burger::before,
-.burger::after {
+.button-burger::before,
+.button-burger::after {
     content: "";
     position: absolute;
     left: 0;
@@ -932,11 +929,11 @@ input[type="radio"]:checked {
     transition: 0.5s;
 }
 
-.burger::before {
+.button-burger::before {
     top: -2px;
 }
 
-.burger::after {
+.button-burger::after {
     bottom: 0;
 }
 
@@ -1046,10 +1043,18 @@ input[type="radio"]:checked {
         margin: 26px 0px 0px 16px;
     }
 
-    .burger {
+    .button-burger {
         display: block;
         margin: 0 0 0 41px;
     }
+
+    .nav--visible .burger__overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+    }    
 
     .nav {
         position: fixed;
@@ -1096,14 +1101,14 @@ input[type="radio"]:checked {
         transition: 0.5s;
     }
 
-    .nav--visible .burger::before {
+    .nav--visible .button-burger::before {
         top: 0;
         transform: rotate(45deg);
         left: 5px;
         transition: 0.5s;
     }
 
-    .nav--visible .burger::after {
+    .nav--visible .button-burger::after {
         transform: rotate(-45deg);
         top: 0;
         left: 5px;
@@ -1147,7 +1152,6 @@ input[type="radio"]:checked {
         position: relative;
         width: 500px;
         height: 562px;
-        overflow: hidden;
     }
 
     .slider__images {
@@ -1235,27 +1239,27 @@ input[type="radio"]:checked {
     }
 
     [data-active-slide-number="1"] .slider__images {
-        transform: translate(25px, 13px);
+        transform: translate(33px, 13px);
         transition: 0.5s;
     }
 
     [data-active-slide-number="2"] .slider__images {
-        transform: translate(-475px, 13px);
+        transform: translate(-450px, 13px);
         transition: 0.5s;
     }
 
     [data-active-slide-number="3"] .slider__images {
-        transform: translate(-975px, 13px);
+        transform: translate(-925px, 13px);
         transition: 0.5s;
     }
 
     [data-active-slide-number="4"] .slider__images {
-        transform: translate(-1475px, 13px);
+        transform: translate(-1400px, 13px);
         transition: 0.5s;
     }
 
     [data-active-slide-number="5"] .slider__images {
-        transform: translate(-1980px, 13px);
+        transform: translate(-1875px, 13px);
         transition: 0.5s;
     }
 
