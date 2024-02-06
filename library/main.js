@@ -2,7 +2,7 @@ window.onload = function() { // можно также использовать w
     
     const burger = document.querySelector('.button-burger');
     const burgerOverlay = document.querySelector('.burger__overlay')
-    const navLink = Array.from(document.querySelectorAll('.nav__link'))
+    const navLink = document.querySelectorAll('.nav__link')
     const header = document.querySelector('.header');
     const slider = document.querySelector('.slider');
     const swipe__left = document.querySelector('.swipe__left')
@@ -15,7 +15,7 @@ window.onload = function() { // можно также использовать w
         });
     };
 
-    navLink?.map(navLinkCallback);
+    navLink?.forEach(navLinkCallback);
     burger?.addEventListener('click', () => {
         header.classList.toggle('nav--visible');
     });
