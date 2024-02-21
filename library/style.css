@@ -303,6 +303,7 @@ a {
     flex-direction: column;
     display: flex;
     padding-bottom: 15px;
+    min-height: 590px;
 }
 
 .book:nth-child(5) {
