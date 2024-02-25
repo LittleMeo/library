@@ -359,6 +359,11 @@ input[type="radio"]:checked {
     display: block;
 }
 
+.choice--hidden {
+    opacity: 0;
+    transition: opacity 0.65s;
+}
+
 #contactChoice1 {
     width: 17px;
     height: 17px;
@@ -450,6 +455,7 @@ input[type="radio"]:checked {
     margin: 0 auto;
     padding: 37px 62px 0 28px;
     gap: 40px 0px;
+    transition: opacity 0.5s;
 }
 
 .book__author {
@@ -1042,6 +1048,10 @@ input[type="radio"]:checked {
     .radio-text {
         gap: 11%;
         margin: 26px 0px 0px 16px;
+        position: sticky;
+        top: 90px;
+        z-index: 9;
+        background-color: white;
     }
 
     .button-burger {
@@ -1055,7 +1065,7 @@ input[type="radio"]:checked {
         right: 0;
         width: 100vw;
         height: 100vh;
-    }    
+    }
 
     .nav {
         position: fixed;

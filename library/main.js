@@ -181,12 +181,21 @@ window.onload = function () { // можно также использовать 
     const swipe__left = document.querySelector('.swipe__left')
     const swipe__right = document.querySelector('.swipe__right')
     const slider__buttons = document.querySelectorAll('.slider__button-area')
+    const favoritesItems = document.querySelector('.favorites__items')
 
     const contactChoiceClick = () => {
         const contactChoices = document.querySelectorAll('.contactChoice');
         contactChoices.forEach((currentElement, index, array) => {
             currentElement.addEventListener('click', (clickEvent) => {
-                favoriteBlockUpdate({data:data,season:clickEvent.target.value});
+                if (clickEvent.target.value !== undefined) {
+                    console.log(favoritesItems.classList.contains('choice--hidden'));
+                    favoritesItems.classList.add('choice--hidden');
+                    setTimeout(() => {
+                        favoriteBlockUpdate({ data: data, season: clickEvent.target.value });
+                        favoritesItems.classList.remove('choice--hidden');
+                    }, 650);
+                } else {
+                }
             });
         });
     };
