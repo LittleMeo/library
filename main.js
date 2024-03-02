@@ -178,11 +178,18 @@ window.onload = function () { // можно также использовать 
     const navLinks = document.querySelectorAll('.nav__link')
     const header = document.querySelector('.header');
     const slider = document.querySelector('.slider');
-    const swipe__left = document.querySelector('.swipe__left')
-    const swipe__right = document.querySelector('.swipe__right')
-    const slider__buttons = document.querySelectorAll('.slider__button-area')
-    const favoritesItems = document.querySelector('.favorites__items')
+    const swipe__left = document.querySelector('.swipe__left');
+    const swipe__right = document.querySelector('.swipe__right');
+    const slider__buttons = document.querySelectorAll('.slider__button-area');
+    const favoritesItems = document.querySelector('.favorites__items');
+    const profile = document.querySelector('.profile__drop-menu');
+    const profileBtn = document.querySelector('.profile__button_icon');
 
+
+    profileBtn.addEventListener ('click',() => {
+        profile.classList.toggle('profile__drop-menu_visible')
+    })
+    
     const contactChoiceClick = () => {
         const contactChoices = document.querySelectorAll('.contactChoice');
         contactChoices.forEach((currentElement, index, array) => {

@@ -32,25 +32,16 @@
             <a href="#library__card" class="nav__link">Library Card</a>
           </li>
         </ul>
-        <div id="drop-menu">
-          <div class="drop-menu">
-            <div class="profile">
-              Profile
-              <div class="log-in">
-                Log in
-                <div class="sub-menu">Подменю 1
-                </div>
-              </div>
-              <div class="register">
-                Register
-                <div class="sub-menu">Подменю 2
-                </div>
-              </div>
-            </div>
-          </div>
       </nav>
       <div class="profile">
-        <button class="button button_icon"><img src="./img/icon/icon_profile.png" alt="icon_profile"></button>
+        <button class="button profile__button_icon"><img src="./img/icon/icon_profile.png" alt="icon_profile"></button>
+        <div class="profile__drop-menu">
+          <div class="profile__title title">Profile</div>
+          <ul class="profile__list">
+            <li class="profile__list-item">Log in</li>
+            <li class="profile__list-item">Register</li>
+          </ul>
+        </div>
       </div>
       <button class="button-burger"  aria-label="Открыть меню" aria-expanded="false">
         <span class="burger__line"></span>
